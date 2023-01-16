@@ -10,7 +10,7 @@
 
 - 🌱 Tenho interesse em **Desenvolvimento de aplicações no lado do servidor, e estou buscando me tornar fullstack**
 
-<h3 align="left">Conecte-se comigo!</h3>
+<h3 align="left">Conecte-se comigo no LinkedIn!</h3>
 <p align="left">
 <a href="https://linkedin.com/in/leonardo-torquato-b4a20521a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leonardo-torquato-b4a20521a" height="30" width="40" /></a>
 </p>
