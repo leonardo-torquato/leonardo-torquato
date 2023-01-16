@@ -10,11 +10,6 @@
 
 - 🌱 Tenho interesse em **Desenvolvimento de aplicações no lado do servidor, e estou buscando me tornar fullstack**
 
-<h3 align="left">Conecte-se comigo no LinkedIn!</h3>
-<p align="left">
-<a href="https://linkedin.com/in/leonardo-torquato-b4a20521a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leonardo-torquato-b4a20521a" height="30" width="40" /></a>
-</p>
-
 <h3 align="left">Linguagens de programação e ferramentas:</h3>
 <p align="left">   
   <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
@@ -52,6 +47,11 @@
   <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> 
     <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> 
   </a> 
+</p>
+
+<h3 align="left">Conecte-se comigo no LinkedIn!</h3>
+<p align="left">
+<a href="https://linkedin.com/in/leonardo-torquato-b4a20521a" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leonardo-torquato-b4a20521a" height="30" width="40" /></a>
 </p>
 
 <!-- 
