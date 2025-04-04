@@ -1,11 +1,14 @@
-## 👋 Olá, eu sou Leonardo Lima!
+## 👋 Olá, eu sou Leonardo Torquato!
 
 Sou **desenvolvedor full-stack** e estudante de **Ciência da Computação** no 7º semestre, atualmente atuando como **estagiário na FUNCAP** como desenvolvedor PHP. Tenho experiência no desenvolvimento de **aplicações back-end e front-end** e projetos acadêmicos que envolvem soluções inovadoras e práticas.
 
 ### 💻 Experiência e Projetos
 
-- **Sistema de Chat Peer-to-Peer**: Desenvolvi um sistema descentralizado de comunicação em **Java e Spring Boot**, utilizando **sockets TCP/IP** para conexão entre pares, permitindo troca de mensagens sem necessidade de um servidor central, apenas se conectando via rede.
-- **Sistema Web de Pomodoro para Gestão de Tempo**: Criei uma plataforma web para **gerenciamento de sprints e pausas**, incluindo estatísticas do tempo gasto por categoria. O sistema também permite que os usuários façam anotações e gerem um **PDF com um compilado das anotações*, muito útil para juntar anotações de estudo para provas ou apresentações.
+- 💼 **Experiência em Desenvolvimento full-stack**: Estagio atualmente na Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP). Atuo no desenvolvimento e manutenção de sistemas internos em PHP, com foco na modernização de aplicações legadas. Minhas atividades incluem refatoração de código, correção de bugs, aplicação de boas práticas de segurança, e migração para versões mais atualizadas da linguagem. Também colaboro com a modelagem e otimização de banco de dados, elaboração de dashboards analíticos, além de participar de integrações e funcionalidades usando Java e PostgreSQL.
+  
+- 🔗 **Projeto de Sistema de Chat Peer-to-Peer**: Desenvolvi uma aplicação de comunicação descentralizada utilizando Java e Spring Boot, com integração de sockets TCP/IP para permitir a troca de mensagens diretas entre pares (peers), eliminando a necessidade de um servidor central. O sistema oferece uma estrutura modular com gerenciamento de conexões, envio/recebimento de mensagens e controle de sessões, simulando a arquitetura de um protocolo P2P real.
+  
+- ⏱️ **Projeto de Sistema Web de Pomodoro para Gestão de Tempo**: Criei uma plataforma interativa de gerenciamento de tempo, focada na técnica Pomodoro, com controle de sprints, pausas curtas e pausas longas, permitindo que o usuário acompanhe seu progresso em tempo real. A aplicação exibe estatísticas por categoria, além de oferecer um sistema de anotações com exportação em PDF, ideal para consolidar conteúdos de estudo ou reuniões. O front-end foi desenvolvido com React, enquanto o back-end utiliza Java e Spring Boot, com persistência em banco de dados.
 
 ### 🔥 Habilidades e Tecnologias
 
