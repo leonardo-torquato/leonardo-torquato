@@ -36,6 +36,10 @@ Sou **desenvolvedor full-stack** e estudante de **Ciência da Computação** no 
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
 
+### 📊 Estatísticas de Linguagens
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardo-torquato&layout=compact&theme=default)](https://github.com/anuraghazra/github-readme-stats)
+
 ### 📫 Conexões
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardo-torquato-b4a20521a)
 [![Email](https://img.shields.io/badge/Email-D14836.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardotorquato49@gmail.com)
