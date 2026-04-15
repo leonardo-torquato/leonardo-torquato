@@ -8,7 +8,7 @@ motores de visualização 3D, orquestração de agentes de IA e pipelines de dad
 Atualmente Engenheiro de Software na **Cirurgic 3D** (Health Tech) e freelancer
 projetando ecossistemas inteligentes com LLMs.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardo-torquato-b4a20521a)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/leonardo-lima-b4a20521a)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardotorquato49@gmail.com)
 
 ---
