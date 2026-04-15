@@ -1,69 +1,109 @@
-## 👋 Olá, eu sou Leonardo Torquato!
+# Leonardo Torquato
 
-Sou **desenvolvedor full-stack** e estudante de **Ciência da Computação** no 7º semestre, atualmente atuando como **estagiário na FUNCAP** como desenvolvedor PHP. Tenho experiência no desenvolvimento de **aplicações back-end e front-end** e projetos acadêmicos que envolvem soluções inovadoras e práticas.
+**Engenheiro de Software · Full-Stack · Arquitetura de Sistemas · IA**
 
-### 💻 Experiência
+Formado em Ciência da Computação (UNIFOR), com experiência em sistemas distribuídos,
+motores de visualização 3D, orquestração de agentes de IA e pipelines de dados.
 
-- 💼 **Experiência em Desenvolvimento full-stack**: Eu estagio atualmente na Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP). Atuo no desenvolvimento e manutenção de sistemas internos em PHP, com foco na modernização de aplicações legadas. Minhas atividades incluem refatoração de código, correção de bugs, aplicação de boas práticas de segurança, e migração para versões mais atualizadas da linguagem. Também colaboro com a modelagem e otimização de banco de dados, elaboração de dashboards analíticos, além de participar de integrações e funcionalidades usando Java e PostgreSQL.
-  
-# 📁 Portfólio
+Atualmente Engenheiro de Software na **Cirurgic 3D** (Health Tech) e freelancer
+projetando ecossistemas inteligentes com LLMs.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardo-torquato-b4a20521a)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardotorquato49@gmail.com)
+
+---
+
+## 💼 Experiência Profissional
+
+### 🏥 Cirurgic 3D — Engenheiro de Software
+
+Desenvolvimento full-cycle de uma plataforma que converte exames de imagem médica (DICOM/NIfTI) em modelos tridimensionais interativos, abrangendo desde o upload de arquivos volumosos (~2 GB) até a renderização no browser.
+
+- **Backend:** API assíncrona com FastAPI, SQLAlchemy async (asyncpg) e PostgreSQL, com migrações versionadas via Alembic. Processamento pesado (segmentação 3D, anonimização, reconstrução com VTK/SimpleITK) delegado a workers Celery + Redis, com armazenamento em object storage S3-compatível (Garage/boto3).
+- **Frontend & Viewer 3D:** SPA em React 19 / Vite / TypeScript (strict mode) com engine de visualização própria (`c3d-viewer-engine`) baseada em Three.js, React Three Fiber e VTK.js. Internacionalização com i18next e estilização com Tailwind CSS.
+- **NephroVision:** Serviço especializado em análise de perfusão renal — Voronoi 3D, centerlines vasculares (VMTK), export GLB — com pipeline científico (NumPy, SciPy, trimesh, nibabel, scikit-image).
+- **Infra:** Monorepo orquestrado via Docker Compose (web, API, PostgreSQL, Redis, Celery worker, Garage, MailHog) com CI via GitHub Actions.
+
+### 🤖 Giga+ AI Agents — Desenvolvedor Full-Stack Freelance
+
+Ecossistema de agentes de IA para automatizar o monitoramento, triagem e gestão de licitações públicas, consumindo a API REST do PNCP.
+
+- **Pipeline de Agentes (Scout → Analista → Liaison):** Orquestração sequencial de múltiplos LLMs com contratos tipados PydanticAI e schemas Pydantic como interface entre agentes — zero acoplamento entre módulos, princípios SOLID e hierarquia de exceções customizada.
+- **Scout:** Busca e triagem de licitações com scoring de relevância via OpenAI/GPT-4o-mini, scraping adaptativo com Playwright e resiliência com Tenacity (retry + backoff).
+- **Analista:** Extração inteligente de editais em PDF com chunking semântico em 3 camadas (pdfplumber + PyMuPDF como fallback) e análise documental via Anthropic/Claude 3.5, produzindo schemas Go/No-Go estruturados.
+- **Liaison:** Integração automatizada com Bitrix24 CRM (criação de leads) e WhatsApp via Evolution API, com fluxo de urgência assíncrono (`asyncio.gather`) para licitações em status crítico.
+- **Qualidade:** Suíte de testes com pytest-asyncio, mocks com respx, logging estruturado com structlog e modo demo sem dependências externas.
+
+### 📊 Campanha-Sys — Desenvolvedor Full-Stack Freelance
+
+Sistema completo de gestão de campanha eleitoral com CRM de eleitores, comunicação em tempo real e análise geoespacial.
+
+- **Mapeamento Eleitoral:** Processamento de dados do TSE e IBGE com GeoPandas, Shapely e pyproj para geração de mapas estratégicos interativos por bairro via Folium, com auditoria de intenção de voto.
+- **Comunicação Real-Time:** Flask-SocketIO (WebSocket com namespaces e rooms por instância) cooperando com sidecar Node.js/Baileys para automação de sessões WhatsApp — dois processos em produção via Heroku (Gunicorn multi-thread).
+- **Segurança & RBAC:** Controle de acesso hierárquico (SuperAdmin, Presidente, Candidato, Coordenador), CSP com Flask-Talisman, rate limiting, CSRF, e hashing bcrypt.
+- **IA & Integrações:** Estúdio de conteúdo com Google Gemini, integração de pagamentos (InfinitePay via webhooks), engajamento Instagram/TikTok, geração de relatórios PDF (WeasyPrint).
+- **Banco de Dados:** Flask-SQLAlchemy com dezenas de migrações Alembic, SQLite em dev e PostgreSQL em produção, com mecanismo de compatibilidade de schema em runtime.
+
+---
 
 ## 🚀 Projetos Pessoais
 
-- **Pomodoro Tracker Full Stack**  
-  Aplicação web desenvolvida com Spring Boot (Java) no back-end e React no front-end.  
-  O sistema permite o gerenciamento de tempo e foco por meio da técnica Pomodoro, com autenticação de usuários, registro e exibição de estatísticas de produtividade. A aplicação simula ciclos completos de trabalho, incluindo sprints, pausas curtas e pausas longas.
+### 📑 Extrator Lattes CNPq — Pipeline ELT
 
-- **MiniReddit (CRUD com PHP e Laravel)**  
-  Projeto pessoal que simula as funcionalidades básicas de uma rede social estilo Reddit.  
-  Implementado em PHP 8 com o framework Laravel, conta com autenticação básica e sistema CRUD para postagens em comunidades fictícias. Foi utilizado como prática de estruturação de aplicações web com MVC e manipulação de banco de dados.
+Pipeline de extração massiva de currículos acadêmicos através do protocolo SOAP governamental do CNPq.
 
-## 🎓 Projetos Acadêmicos
+- Construção manual de envelopes SOAP (sem Zeep/suds), transporte HTTP com `requests`, parsing de namespaces XML com `lxml`, decodificação Base64 → ZIP → XML com conversão recursiva para dicionários Python.
+- Armazenamento como JSONB em PostgreSQL com upsert idempotente e índice GIN, projetado para evoluir em lakehouse com views materializadas.
 
-- **E-commerce Distribuído com Micro Serviços**  
-  Projeto acadêmico que simula um site de e-commerce inspirado na Amazon, utilizando Docker, Spring Boot e React.  
-  A arquitetura é composta por quatro aplicações integradas: uma API Gateway, uma aplicação de front-end, um serviço de pedidos e outro de usuários/produtos. O sistema permite login, cadastro de produtos e realização de pedidos por usuários.
+### 🛒 DistriCommerce — Arquitetura de Microsserviços
 
-- **Sistema de Chat P2P com Spring Boot**  
-  Aplicação desenvolvida em Java e Spring Boot para comunicação entre computadores conectados na mesma rede Wi-Fi, baseada em sockets TCP/IP.  
-  A estrutura permite envio de mensagens de forma descentralizada (peer-to-peer). A camada de comunicação já está funcional, com interface gráfica em desenvolvimento.
+Plataforma de e-commerce distribuída simulando o fluxo completo de uma grande varejista.
 
-
-### 🔥 Habilidades e Tecnologias
-
-#### **Linguagens de Programação**
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-
-#### **Back-end**
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
-
-#### **Front-end**
-![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-%237952B3.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-#### **Banco de Dados**
-![MySQL](https://img.shields.io/badge/MySQL-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
-#### **Ferramentas**
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
-
-### 📊 Estatísticas de Linguagens
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardo-torquato&layout=compact&theme=default)](https://github.com/anuraghazra/github-readme-stats)
-
-### 📫 Conexões
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardo-torquato-b4a20521a)
-[![Email](https://img.shields.io/badge/Email-D14836.svg?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardotorquato49@gmail.com)
-
+- **3 Microsserviços Spring Boot** (Java 17/21): Produtos/Usuários (JPA + PostgreSQL), Pedidos/Pagamentos/Logística (MongoDB), com API Gateway (Spring Cloud Gateway + Resilience4j Circuit Breaker + fallback).
+- **Mensageria assíncrona** com RabbitMQ (DirectExchange, filas dedicadas, `@RabbitListener`) para o fluxo pedido → pagamento → logística.
+- **Observabilidade:** Prometheus + Grafana com métricas via Micrometer/Actuator. Frontend em React/Vite com Material UI.
 
 ---
+
+## 🛠️ Stack Tecnológica
+
+**Back-End**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+
+**Front-End**
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)
+
+**IA & LLMs**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+
+**Banco de Dados & Mensageria**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+
+**Infraestrutura & Observabilidade**
+
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
